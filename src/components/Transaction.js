@@ -2,7 +2,7 @@ import React from "react";
 import { useStateValue } from "../context/StateProvider";
 
 const Transaction = ({transaction}) => {
-    const [{}, dispatch] = useStateValue();
+    const [state, dispatch] = useStateValue();
 
   const sign = transaction.amount < 0 ? "-" : "+";
 
